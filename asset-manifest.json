@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Boston-Rainfall/static/css/main.d5326d77.css",
-    "main.js": "/Boston-Rainfall/static/js/main.9cc91cec.js",
+    "main.css": "/Boston-Rainfall/static/css/main.37837b2b.css",
+    "main.js": "/Boston-Rainfall/static/js/main.eab73858.js",
     "index.html": "/Boston-Rainfall/index.html",
-    "main.d5326d77.css.map": "/Boston-Rainfall/static/css/main.d5326d77.css.map",
-    "main.9cc91cec.js.map": "/Boston-Rainfall/static/js/main.9cc91cec.js.map"
+    "main.37837b2b.css.map": "/Boston-Rainfall/static/css/main.37837b2b.css.map",
+    "main.eab73858.js.map": "/Boston-Rainfall/static/js/main.eab73858.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5326d77.css",
-    "static/js/main.9cc91cec.js"
+    "static/css/main.37837b2b.css",
+    "static/js/main.eab73858.js"
   ]
 }
