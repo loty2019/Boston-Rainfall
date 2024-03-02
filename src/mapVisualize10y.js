@@ -32,6 +32,10 @@ function Visualize10y({ data }) {
       const townElement = document.getElementById(Data.Site);
       if (townElement) {
         townElement.style.fill = color;
+		if (Data.Site === "South End - Union Park St. Playground10y") {
+			document.getElementById("Seaport10y").style.fill = color;
+			document.getElementById("Downtown10y").style.fill = color;
+		}
       } else {
 		console.log("id error")
 	  }
@@ -1461,7 +1465,7 @@ function Visualize10y({ data }) {
         </g>
         <g id="waterfront">
           <path
-           
+			id = "Seaport10y"
             class="st4"
             d="M319,307.9l-12.1,6l-14.6-22.4c0,0-8.2-11.2-8.2-16s7.1-21.3,9.3-23.7s10.9-5.2,10.9-5.2l8.8-12.7l1.2-2.1
 		l1.2-2.1l0-0.1l0.4-0.7l-0.1,0l0-0.1l0.5-0.9l0.1,0l0.1-0.2l0.4-0.6l0-0.1l0.8-0.9l1.7-0.9l1.9-0.5l1,0.1l1.6,0.1l2.2,0.9l-1.7,3.4
@@ -1896,6 +1900,7 @@ function Visualize10y({ data }) {
         </g>
         <g id="downtown">
           <path
+		  	id = "Downtown10y"
             class="st10"
             d="M257,243.6l-15.1,5.9l-8.2-23.2l26.6-10.9l2-1.6l1.2-3.1l0.8-6l1.2-3l3.9-4.8l5.4-1l2.3-3.4l3.1-2.4l2.1-1.2
 		l3.8-0.8l6.7,1.3l0,0.1l0.1,0.3l0,0.1l0,0.1l0,0.2l-0.2,0l0.1,0.5l-0.1,0l-0.2,0.1l0,0.1l0,0.1l0.1,1.3l0,0.3l0.8,1l2.4-1.4
