@@ -15,7 +15,7 @@ function App() {
       let dataAggregator = {};
 
       for (let year = 2014; year <= 2024; year++) {
-        const response = await fetch(`/Data/${year}.csv`);
+        const response = await fetch(`${process.env.PUBLIC_URL}/Data/${year}.csv`);
         const text = await response.text();
 
         Papa.parse(text, {
@@ -49,7 +49,7 @@ function App() {
       let dataAggregator = {};
 
       for (let year = 2019; year <= 2024; year++) {
-        const response = await fetch(`/Data/${year}.csv`);
+        const response = await fetch(`${process.env.PUBLIC_URL}/Data/${year}.csv`);
         const text = await response.text();
 
         Papa.parse(text, {
@@ -81,7 +81,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/Data/${year}.csv`);
+        const response = await fetch(`${process.env.PUBLIC_URL}/Data/${year}.csv`);
         const reader = response.body.getReader();
         const result = await reader.read(); // Read the stream
         const decoder = new TextDecoder("utf-8");
